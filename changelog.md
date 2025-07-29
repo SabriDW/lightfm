@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.18][2025-01-29]
+
+### Added
+
+- Added automated release workflow using GitHub Actions and cibuildwheel for `lightfm-mirror` package
+- Cross-platform wheel building for Linux, macOS (Intel + ARM), and Windows
+- PyPI trusted publishing for secure, automated package uploads
+
+### Fixed
+
+- Fixed build for pip with --use-pep517 (moved version to separate file, cleaned up imports)
+- Improved CI/CD infrastructure with GitHub Actions testing on pull requests
+- Added Windows to test matrix for better platform coverage
+
+### Changed
+
+- Package released as `lightfm-mirror` to provide reliable distribution without GitHub dependency
+- Enhanced build system compatibility with modern Python packaging standards
+- Improved version management with dedicated version.py file
+
 ## [1.17][2023-03-19]
 
 ### Fixed

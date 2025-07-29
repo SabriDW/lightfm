@@ -166,13 +166,13 @@ use_openmp = not sys.platform.startswith("darwin") and not sys.platform.startswi
 long_description = pathlib.Path(__file__).parent.joinpath("README.md").read_text()
 
 setup(
-    name="lightfm",
+    name="lightfm-mirror",
     version=read_version(),
-    description="LightFM recommendation model",
+    description="LightFM recommendation model (mirror release)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/lyst/lightfm",
-    download_url="https://github.com/lyst/lightfm/tarball/{}".format(read_version()),
+    url="https://github.com/sabridw/lightfm",
+    download_url="https://github.com/sabridw/lightfm/tarball/{}".format(read_version()),
     packages=["lightfm", "lightfm.datasets"],
     package_data={"": ["*.c"]},
     install_requires=["numpy", "scipy>=0.17.0", "requests", "scikit-learn"],
